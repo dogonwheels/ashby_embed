@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Embedded Job Board Test</title>
+</head>
+
+<body>
+  <div id="ashby_embed"></div>
+  <script type="text/javascript">
+    window.__ashbyBaseJobBoardUrl = "https://jobs-45303.ashbyhqpr.com/reteam";
+
+    window.__Ashby = {
+      settings: {
+        onEmbedLoaded: function (settings) {
+          console.log("Job board loaded! Settings:", settings);
+        }
+      }
+    }
+  </script>
+  <script src="https://jobs-45303.ashbyhqpr.com/reteam/embed?version=2"></script>
+</body>
+</html>
